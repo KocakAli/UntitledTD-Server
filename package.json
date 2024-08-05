@@ -10,7 +10,7 @@
     "type": "module",
     "scripts": {
         "debug": "node --inspect . --env=dev",
-        "dev": "node . --env=dev",
+        "dev": "nodemon . --env=dev",
         "development": "node . --env=dev",
         "prod": "node . --env=prod",
         "production": "node . --env=prod",
@@ -26,6 +26,7 @@
         "minimist": "^1.2.8",
         "module-alias": "^2.2.2",
         "mongoose": "^7.3.3",
+        "nodemon": "^3.1.4",
         "performance-now": "^2.1.0",
         "rbush": "3.0.1",
         "semver": "^7.5.2",
