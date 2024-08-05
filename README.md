@@ -1,7 +1,25 @@
-# What is this?
-This is a feature-rich JavaScript server, compiled from TypeScript with a couple things improved by hand
+# GERÇEK README DOSYASI
 
-# How do I run this?
-- Run `npm i` to install all the dependencies
-- Run the server via `node .` (or `node server.js`)
-- PROFIT!
+
+## İŞİMİN DÜŞECEĞİ DOSYALAR
+
+-  validators/handlePacket.js
+-  validators/sendStuff.js
+
+## SERVERDAN DATA ALMA
+
+-  *handlers* klaösrü içinde *custom.js* dosyası içerisindeki örneklere benzer şekilde verileri karşılayabiliyoruz ya da
+-  *validators/handlePacket.js* içerisinde switch case kısmında event adıyla gelen veriyi karşılayabiliyoruz 
+
+- Ayrıca veri alma işlemlerinin hepsi *validators/handlePacket.js* içerisinde tanımlanmış
+
+
+
+## SERVERA DATA GÖNDERME
+
+- *senders* klasörü içinden template'e benzer ekleyerek ya da  
+- *validator/sendStuff.js* içerisinde basic wrapperlar tanımlayarak gönderebiliyoruz.
+
+- Ayrıca gönderme işlemlerinin hepsi *validators/sendStuff.js* içerisinde tanımlanmış
+
+
