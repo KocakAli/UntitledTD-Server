@@ -86,6 +86,10 @@ export class SendStuff {
     sendHello() {
         this.send({ cmd: 'hello', str: 'Hello, client!' });
     }
+
+    sendBackSex(msg){
+        this.send({ cmd: 'sex', msg });
+    }
     
     /**
      * @param {string} msg

@@ -7,3 +7,5 @@ SendStuff.prototype.sendPlayerControls = function (data) {
     let id = this.entity.uuid;
     this.broadcastRoom({ cmd: 'player controls', id, ...data }, true);
 };
+
+

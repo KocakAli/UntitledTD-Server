@@ -74,17 +74,17 @@ const args = minimist(process.argv.slice(2));
 
 const common_config = {
     meta: {
-        game_name: 'Warp Game',
+        game_name: 'UntitledTD',
         game_version: 'v1.0.0',
-        warp_version: 'v6.0.0',
+        warp_version: '6.0.0',
         
         compatible_game_versions: '>=1.0.0',
         
-        server: 'unknown'
+        server: 'development'
     },
     
     server: {
-        max_connections: 1000,
+        max_connections: 100,
         max_ws_payload: 2 * 1024 * 1024 // 2 MB
     },
     

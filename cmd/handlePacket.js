@@ -59,7 +59,10 @@ export async function handlePacket(c, data) {
             trace('Message from client: ' + data.msg);
             c.sendMessage(data.msg + ' indeed');
             break;
-        
+        case 'sex':
+            trace('Message from client:' + data.data.msg);
+            c.sendBackSex("we get your sex request")
+            break;
         default:
             let handler = packetHandlers[cmd];
             if (handler) {

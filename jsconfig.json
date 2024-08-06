@@ -1,19 +1,28 @@
 {
     "compilerOptions": {
+        "baseUrl": ".", 
         "paths": {
             "#schemas/*": ["schemas/*"],
             "#entities/*": ["entities/*"],
             "#initializers/*": ["initializers/*"],
+            "#senders/*": ["cmd/senders/*"],
+            "#levels/*": ["levels/*"],
+            "#validators/*": ["cmd/validators/*"],
             "#types/*": ["types/*"],
             "#concepts/*": ["concepts/*"],
             "#util/*": ["util/*"],
-
             "#cmd/*": ["cmd/*"],
-            "#*": ["*"],
-
             "#root/*": ["./*"],
-
-            "*": ["node_modules/*", "src/*"]
+            "*": ["node_modules/*", "*"]
         }
-    }
+    },
+    "include": [
+        "cmd/**/*", 
+        "entities/**/*", 
+        "initializers/**/*", 
+        "levels/**/*", 
+        "maps/**/*", 
+        "schemas/**/*", 
+        "types/**/*"
+    ]
 }

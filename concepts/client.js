@@ -36,6 +36,11 @@ export default class Client extends SendStuff {
     
     /** @type {Match} */
     match = null;
+
+    /** @type {Gold} */
+    gold = 60;
+
+
     
     
     /** @type {Account} */

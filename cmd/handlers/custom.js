@@ -24,3 +24,10 @@ addHandler('player controls', (c, data) => {
     c.entity.inputs.move.y = clamp(c.entity.inputs.move.y, -1, 1);
 });
 
+/*
+addHandler('sex', (c, data) =>{
+    console.log(c);
+    console.log(data)
+});
+
+*/

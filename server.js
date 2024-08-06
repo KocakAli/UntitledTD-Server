@@ -64,6 +64,7 @@ const server = createServer(function (socket) {
     
     // When data arrived
     socket.on('data', function (data) {
+        console.log("data triggered bro")
         // create artificial_delay
         if (delayReceive.enabled) {
             setTimeout(function () {
@@ -132,6 +133,7 @@ if (global.config.ws_enabled) {
         
         // When data arrived
         socket.on('message', function (data) {
+           
             // create artificial_delay
             if (delayReceive.enabled) {
                 setTimeout(function () {
